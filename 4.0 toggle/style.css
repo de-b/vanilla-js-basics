@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+*:focus, *:active {
+    outline: none;
+}
+
+.toggleBlock {
+  margin: 40px auto;
+  max-width: 450px;
+  background-color: #f1f1f1;
+}
+
+button#toggle {
+  display: block;
+  padding: 12px 20px;
+  text-align: center;
+  background-color: teal;
+  color: #fff;
+  border-radius: 0;
+  border: none;
+  width: 100%;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.toggleDiv {
+    -webkit-transition: height 0.7s ease-in-out;
+    -moz-transition: height 0.7s ease-in-out;
+    -o-transition: height 0.7s ease-in-out;
+    transition: height 0.7s ease-in-out;
+    height: 240px;
+    overflow: hidden;
+}
+
+.toggleDiv ul {
+    padding: 0; margin: 0; list-style: none;
+}
+
+.toggleDiv ul li {
+    
+    border-bottom: solid 1px #ccc;
+}
+.toggleDiv ul li a {
+    padding: 15px 15px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+}
+
+.hide {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height 0.7s ease-in-out;
+    -moz-transition: height 0.7s ease-in-out;
+    -o-transition: height 0.7s ease-in-out;
+    transition: height 0.7s ease-in-out;
+}

@@ -1,0 +1,50 @@
+body {
+    background-color: #eee;
+}
+
+.colorFlipper {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-flow: column wrap;
+}
+
+.colorFlipper h1 {
+    text-transform: uppercase;
+
+}
+
+.colorGenerated {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 40px;
+    font-size: 20px;
+    background-color: rgba(255,255,255,0.8) ;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,0.04);
+    text-align: center;
+}
+
+@media(min-width: 500px){
+    .colorGenerated {
+        min-width: 400px;
+    }
+}
+
+.colorShow {
+    margin: 30px auto 0;
+    width: 120px;
+    height: 120px;
+}
+
+button#colorGenerate {
+    display: inline-block;
+    margin-top: 30px;
+    border: solid 2px rgba(255,255,255,0.8);
+    background-color: rgba(0,0,0,0.7);
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 19px;
+    border-radius: 5px;;
+}
